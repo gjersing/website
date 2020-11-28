@@ -1,0 +1,14 @@
+{%extends "pages.html"%}
+{%block content%}
+<div class ="projects">
+    <h1><u>Projects</u></h1>
+</div>
+<script type = "text/javascript" src={{cdn_js | safe}}></script>
+<div class ="plot">
+    <h1>Interactive Stock Visualization</h1>
+    <p>Shown is an interactive candlestick graph showcasing Tesla's year to date stock value. This was built using pandas and Bokeh.</p>
+    <p>Users can utilize the side bar controls to pan, box zoom, wheel zoom, save a PNG, and reset the graph.</p>
+</div>
+{{main | safe}}
+{{div1 | safe}}
+{%endblock%}
